@@ -21,17 +21,118 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 1;
   font-size: 1.6rem;
   height: 100vh;
   background-color: var(--verylightgrayishblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.primary-heading {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.primary-heading--number {
+  font-size: 1.6rem;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 6px;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+.main__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
+.main__header-mark:link, .main__header-mark:visited {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+.main__header-mark:hover, .main__header-mark:active {
+  color: var(--blue);
 }
 
 .container {
-  max-width: 120rem;
-  margin: 10rem auto;
-  padding: 2rem;
+  max-width: 75rem;
+  margin: auto;
+  padding: 2rem 3rem;
   background-color: var(--white);
   border-radius: 10px;
+}
+
+.notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notification {
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.notification--checked {
+  background-color: var(--verylightgrayishblue);
+}
+.notification__name {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.notification__message {
+  padding: 2rem;
+  background-color: var(--lightgrayishblue1);
+  border-radius: 10px;
+}
+.notification__message-message {
+  line-height: 1.4;
+  color: var(--darkgrayishblue);
+  font-weight: 500;
+}
+.notification-chess {
+  margin-left: auto;
+}
+.notification-chess img {
+  border: 3px solid var(--lightgrayishblue2);
+  border-radius: 10px;
+}
+.notification-description {
+  color: var(--darkgrayishblue);
+  font-weight: 500;
+}
+.notification-description--name:link, .notification-description--name:visited {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--verydarkblue);
+}
+.notification-description--name:hover, .notification-description--name:active {
+  color: var(--blue);
+}
+.notification-description--group:link, .notification-description--group:visited {
+  color: var(--darkgrayishblue);
+  font-weight: 800;
+  text-decoration: none;
+}
+.notification-description--group:hover, .notification-description--group:active {
+  color: var(--blue);
+}
+.notification-date {
+  color: var(--grayishblue);
 }
