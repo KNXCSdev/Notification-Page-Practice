@@ -7,6 +7,12 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Notifications page</title>
     <script defer src="main.js"></script>
   </head>
@@ -18,54 +24,93 @@
             Notifications
             <span class="primary-heading--number">3</span>
           </h1>
-          <a href="#" class="mark">Mark all as read</a>
+          <a href="#" class="main__header-mark">Mark all as read</a>
         </header>
         <div class="notifications">
-          <div class="notification">
+          <div class="notification notification--checked">
             <img src="assets/images/avatar-mark-webber.webp" alt="" />
-            <p class="notification-description">
-              Mark Webber reacted to your recent post My first tournament today!
-            </p>
-            <p class="notification-date">1m ago</p>
+            <div class="notification__name">
+              <p class="notification-description">
+                <a href="#" class="notification-description--name">Mark Webber</a>&nbsp; reacted to
+                your recent post&nbsp;
+                <a href="#" class="notification-description--group">My first tournament today!</a>
+              </p>
+              <p class="notification-date">1m ago</p>
+            </div>
           </div>
-          <div class="notification">
+          <div class="notification notification--checked">
             <img src="assets/images/avatar-angela-gray.webp" alt="" />
-            <p class="notification-description">Angela Gray followed you</p>
-            <p class="notification-date">5m ago</p>
+            <div class="notification__name">
+              <p class="notification-description">
+                <a href="#" class="notification-description--name">Angela Gray</a>&nbsp; followed
+                you&nbsp;
+              </p>
+              <p class="notification-date">5m ago</p>
+            </div>
           </div>
-          <div class="notification">
+          <div class="notification notification--checked">
             <img src="assets/images/avatar-jacob-thompson.webp" alt="" />
-            <p class="notification-description">Jacob Thompson has joined your group Chess Club</p>
-            <p class="notification-date">1 day ago</p>
+            <div class="notification__name">
+              <p class="notification-description">
+                <a href="#" class="notification-description--name">Jacob Thompson</a>&nbsp; has
+                joined your group&nbsp;
+                <a href="#" class="notification-description--group">Chess Club</a>
+              </p>
+              <p class="notification-date">1 day ago</p>
+            </div>
           </div>
           <div class="notification">
             <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" />
-            <p class="notification-description">Rizky Hasanuddin sent you a private message</p>
-            <p class="notification-date">5 days ago</p>
-            <div class="notification__message">
-              <p class="notification__message-message">
-                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now
-                and I'm already having lots of fun and improving my game.
+            <div class="notification__name">
+              <p class="notification-description">
+                <a href="#" class="notification-description--name">Rizky Hasanuddin</a>&nbsp; sent
+                you a private message&nbsp;
               </p>
+              <p class="notification-date">5 days ago</p>
+              <div class="notification__message">
+                <p class="notification__message-message">
+                  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks
+                  now and I'm already having lots of fun and improving my game.
+                </p>
+              </div>
             </div>
           </div>
           <div class="notification">
             <img src="assets/images/avatar-kimberly-smith.webp" alt="" />
-            <p class="notification-description">Kimberly Smith commented on your picture</p>
-            <p class="notification-date">1 week ago</p>
+            <div class="notification__name">
+              <p class="notification-description">
+                <a href="#" class="notification-description--name">Kimberly Smith</a>&nbsp;
+                commented on your picture&nbsp;
+              </p>
+              <p class="notification-date">1 week ago</p>
+            </div>
+            <a href="#" class="notification-chess">
+              <img src="assets/images/image-chess.webp" alt="chess Image"
+            /></a>
           </div>
           <div class="notification">
             <img src="assets/images/avatar-nathan-peterson.webp" alt="" />
-            <p class="notification-description">
-              Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win
-              rate
-            </p>
-            <p class="notification-date">2 weeks ago</p>
+            <div class="notification__name">
+              <p class="notification-description">
+                <a href="#" class="notification-description--name">Nathan Peterson</a>&nbsp; reacted
+                to your recent post&nbsp;
+                <a href="#" class="notification-description--group"
+                  >5 end-game strategies to increase your win rate</a
+                >
+              </p>
+              <p class="notification-date">2 weeks ago</p>
+            </div>
           </div>
           <div class="notification">
             <img src="assets/images/avatar-anna-kim.webp" alt="" />
-            <p class="notification-description">Anna Kim left the group Chess Club</p>
-            <p class="notification-date">2 weeks ago</p>
+            <div class="notification__name">
+              <p class="notification-description">
+                <a href="#" class="notification-description--name">Anna Kim</a>&nbsp; left the
+                group&nbsp;
+                <a href="#" class="notification-description--group">Chess Club</a>
+              </p>
+              <p class="notification-date">2 weeks ago</p>
+            </div>
           </div>
         </div>
       </div>
