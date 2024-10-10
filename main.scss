@@ -35,6 +35,15 @@ img {
   height: 5rem;
 }
 
+.read {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--red);
+  margin-left: 0.5rem;
+}
+
 .primary-heading {
   font-size: 3rem;
   display: flex;
@@ -90,7 +99,7 @@ img {
   padding: 2rem;
   display: flex;
   gap: 2rem;
-
+  cursor: pointer;
   &--checked {
     background-color: var(--verylightgrayishblue);
   }
